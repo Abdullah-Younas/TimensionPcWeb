@@ -1,0 +1,187 @@
+:root{
+    --clr-dark: #eed47d;
+    --clr-light: #f7fee7;
+    --clr-slate400: #2dd4bf;
+    --clr-slate600: #0d9488;
+    --clr-yellow300: #fde047;
+    --clr-sky400: #14b4f8;
+
+    /* rose rgb(161, 18, 58) indigo rgb(55, 47, 162)*/
+
+    /* sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-s: 0.875rem;
+    --size-base: 1rem;
+    --size-l: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    line-height: calc(1em , .1rem);
+    padding: 0;
+    background-color: var(--clr-dark);
+    color: var(--clr-sky400);
+}
+main{
+    transition: all .4s;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'General Sans', sans-serif;
+}
+strong{
+    color: var(--clr-yellow300);
+}
+li, a{
+    font-family: 'General Sans', sans-serif;
+    font-weight: 500;
+    font-size: var(--size-xl);
+    color: var(--clr-yellow300);
+    text-decoration: none;
+}
+header{
+    background-color: var(--clr-yellow300);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+#logo{
+    background-color: var(--clr-yellow300);
+    font-size: var(--size-5xl);
+}
+.container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.events{
+    position: relative;
+    background-color: rgb(235, 226, 173);
+    color: indigo;
+    text-align: center;
+    padding: 1rem;
+    width: 20rem;
+    height: 6rem;
+    border-radius: 2rem;
+    font-weight: 700;
+}
+#addbtnbtn{
+    background-color: var(--clr-yellow300);
+    border: none;
+    padding: 2rem 9.5rem;
+    border-radius: 2rem;
+    transition: all 0.5s;
+}
+#addbtnbtn:hover{
+    background-color: rgb(235, 226, 173);
+}
+#addbtnbtn:active{
+    background-color: rgb(170, 163, 124);
+}
+.subbtn{
+    position: absolute;
+    border: none;
+    width: 2em;
+    height: 2em;
+    transform: translateX(10em) translateY(1em);
+    background-color: var(--clr-yellow300);
+    border-radius: 2rem;
+}
+.subbtn:hover{
+    background-color: rgb(235, 226, 173);
+}
+.subbtn:active{
+    background-color: rgb(235, 226, 173);
+}
+.names{
+    background-color: khaki;
+    color: var(--clr-indigo800);
+}
+.SetTimeContainer{
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(218, 205, 136);
+    width: 25em;
+    height: 40em;
+    margin-left: 29%;
+    transform: translateY(-9rem);
+    display: none;
+}
+.setbox{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color:rgb(218, 205, 136);
+    font-size: var(--size-2xl);
+    font-weight: bolder;
+}
+.timestimes{
+    background-color:rgb(218, 205, 136);
+}
+.boxs{
+    background-color: rgb(218, 205, 136);
+    display:  flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#stcbtndiv{
+    margin-top: 4rem;
+    display: inline;
+    background-color: rgb(218, 205, 136);
+}
+#stcbtn{
+    border: none;
+    padding: .5rem 2rem;
+    border-radius: 20px; 
+    background-color: var(--clr-yellow300);
+    box-shadow: 0px 3px 5px var(--clr-dark), 0px 6px 5px var(--clr-dark),
+    0px 10px 10px var(--clr-dark);
+    transition: all 0.5s;
+}
+#stcbtn:hover{
+    background-color:rgb(235, 226, 173);
+    transform: translateY(-3px);
+}
+#hoursInput{
+    margin-left: 1.4em;
+}
+#minsInput{
+    margin-left: 0.5em;
+}
+.timeinputs{
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(118, 163, 105);
+}
+.eventsContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(235, 226, 173);
+    transform: translateY(.7rem);
+}
+.times{
+    font-weight: 600;
+    font-size: var(--size-3xl);
+    background-color: rgb(235, 226, 173);
+    color: #3730a3;
+}
